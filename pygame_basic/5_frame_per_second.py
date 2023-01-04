@@ -44,7 +44,7 @@ while running:
     dt = clock.tick(60)  # 게임화면의 초당 프레임 수를 설정
     # 프레임 수에 따라 부드러움이 달라질 수는 있지만 이동거리가 달라지면 안됨
 
-    print("fps : "+str(clock.get_fps()))
+    # print("fps : "+str(clock.get_fps()))
 
     for event in pygame.event.get():  # 어떤 이벤트가 발생했는지
         if event.type == pygame.QUIT:  # 창이 닫히는 이벤트가 발생하면
