@@ -52,11 +52,12 @@ game_font = pygame.font.Font(None, 40)  # 폰트 객체 생성(폰트, 크기)
 total_time = 10
 
 # 시작 시간 정보
-start_ticks = pygame.time.get_ticks()  # 현재 tick을 받아옴
+start_ticks = pygame.time.get_ticks()  # 현재 tick(시간)을 받아옴
 
 # 이벤트 루프 => 프로그램이 종료되지 않도록 대기하는것으로 마우스나 키보드 입력을 체크하는것
 # 이벤트 루프가 있어야 화면이 종료되지 않으므로 설정
 running = True  # 게임이 진행중인가?
+
 while running:
     # 캐릭터가 1초동안에 100만큼 이동해야한다면
     # 10 fps: 1초동안에 10번 동작 => 1초에 10만큼 이동해야함
